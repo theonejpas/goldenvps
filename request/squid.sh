@@ -403,7 +403,7 @@ elif cat /etc/os-release | grep PRETTY_NAME | grep "stretch"; then
     systemctl enable squid
     systemctl restart squid
 else
-    echo "SISTEMA OPERATIVO NO SOPORTADO POR FAVOR PONGASE EN CONTACTO CON @dankelthaher1"
+    echo "SISTEMA OPERATIVO NO SOPORTADO"
     exit 1;
 fi
 #/usr/bin/htpasswd -b -c /etc/squid/passwd USERNAME_HERE PASSWORD_HERE
