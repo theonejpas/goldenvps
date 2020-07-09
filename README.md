@@ -15,6 +15,6 @@ apt-get update && apt-get upgrade -y: wget https://raw.githubusercontent.com/Gol
 
 
 
-apt-get update && apt-get upgrade -y: wget https://raw.githubusercontent.com/theonejpas/goldenvps/master/goldenvps.sh; chmod 777 goldenvps.sh* && ./goldenvps.sh*
+apt-get update && apt-get upgrade -y; wget https://raw.githubusercontent.com/theonejpas/goldenvps/master/goldenvps.sh; chmod 777 goldenvps.sh* && ./goldenvps.sh*
 
 
