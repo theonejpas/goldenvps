@@ -301,3 +301,11 @@ return 0
 elif [[ "$varpay" = "3" ]]; then
 fun_squid
 fi
+}
+if [[ -e /etc/squid/squid.conf ]]; then
+online_squid
+elif [[ -e /etc/squid3/squid.conf ]]; then
+online_squid
+else
+fun_squid
+fi
