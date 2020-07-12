@@ -301,4 +301,3 @@ return 0
 elif [[ "$varpay" = "3" ]]; then
 fun_squid
 fi
-}
