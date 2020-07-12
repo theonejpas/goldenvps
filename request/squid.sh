@@ -410,10 +410,10 @@ fi
 }
 
 msg -bar
-echo -ne "\033[1;32m [1] > " && msg -azu "INSTALAR SQUID"
-echo -ne "\033[1;32m [2] > " && msg -bra "SQUID UBUNTU 18,19"
-echo -ne "\033[1;32m [3] > " && msg -azu "DETENER SQUID"
-echo -ne "\033[1;32m [0] > " && msg -bra "SALIR"
+echo -ne "\033[1;32m [1] > " && msg -azu "$(fun_trans "INSTALAR SQUID")"
+echo -ne "\033[1;32m [2] > " && msg -bra "$(fun_trans "SQUID UBUNTU 18,19")"
+echo -ne "\033[1;32m [3] > " && msg -azu "$(fun_trans "DETENER SQUID")"
+echo -ne "\033[1;32m [0] > " && msg -bra "$(fun_trans "SALIR")"
 msg -bar
 while [[ ${varread} != @([0-3]) ]]; do
 read -p "Opcion: " varread
