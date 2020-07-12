@@ -163,7 +163,7 @@ if [[ -e $HOME/lista-arq ]] && [[ ! $(cat $HOME/lista-arq|grep "KEY INVALIDA!") 
    msg -ama "$(source trans -b pt:${id} "GRACIAS POR USAR"|sed -e 's/[^a-z -]//ig'): \033[1;31m[GOLDEN ADM PRO]"
    [[ ! -d ${SCPinstal} ]] && mkdir ${SCPinstal}
    pontos="."
-   stopping="$(source trans -b pt:${id} "Verificando Actualizaciones"|sed -e 's/[^a-z -]//ig')"
+   stopping="$(source trans -b pt:${id} "Verificando Atualizacoes"|sed -e 's/[^a-z -]//ig')"
    for arqx in $(cat $HOME/lista-arq); do
    msg -verm "${stopping}${pontos}"
    wget -O ${SCPinstal}/${arqx} ${REQUEST}/${arqx} > /dev/null 2>&1 && verificar_arq "${arqx}" || error_fun
